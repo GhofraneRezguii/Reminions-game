@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="game-container">
+        <h1 class="game-title">Reminions</h1>
+        <div class="score-board">
+            <div>Moves: <span id="moves">0</span></div>
+            <div>Time: <span id="time">0</span> seconds</div>
+        </div>
+        <div class="game-board" id="gameBoard"></div>
+        <div id="winMessage" class="win-message hidden">You win🏆</div>
+        <button id="resetButton" class="reset-button hidden">Reset Game</button>
+        <!-- Update the src attribute with the direct download link -->
+        <audio id="gameSound" src="a-kitchen-timer-55420.mp3" loop></audio>
+
+    </div>
+    
+    <!-- Hidden YouTube IFrame for Audio -->
+    <div id="youtubeAudio" class="youtube-audio hidden">
+        <iframe id="youtubeIframe" 
+                src="https://www.youtube.com/embed/plW2OIYk3lQ?enablejsapi=1&controls=0&mute=0" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen></iframe>
+    </div>
+
+    <!-- Include the YouTube IFrame API script -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
